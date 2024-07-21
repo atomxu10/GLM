@@ -1,4 +1,4 @@
-# GLM
+# Invstigation of the effect of speed limit on the severity of road traffic accidents in the UK 2020
 
 Road traffic accidents (RTAs) in the United Kingdom are a persisting problem which continues to cause severe injuries and incur high costs despite government efforts to aviod them. This analysis investigates the relationship between accident severity and speed limit using data from the UK’s Department for Transport on RTAs in 2020 while also considering other variables that may affect this relationship.
 
