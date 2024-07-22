@@ -108,12 +108,17 @@ As can be seen in Table 4, the link which best fits the data is the probit link.
 </div>
 <p align="center"> Table 4: Model comparison for link selection </p>
 
-
-
 ### 3.4 Model Result
+The final statistical model is a logistic regression model that adjusts for 19 variables inclusive of three interaction terms between the speed limit and motorcycle, bicycle, and pedestrian involvement. This model uses a logit link to facilitate the interpretation of the results.
 
+The results are conveyed using odds ratios (ORs), which provide a measure of the likelihood of an accident being classified as “fatal or serious” compared to “slight” for different levels of a particular variable in the context of accident severity. For categorical variables, the odds ratio compares the odds of experiencing a “fatal or serious” accident in one category (such as high-speed limit) with the odds of having a “fatal or serious” accident in a reference category (such as a 20mph speed limit). For numerical variables, the OR indicates the change in the odds of having a “fatal or serious” accident associated with a one-unit increase in the variable. It is essential to note that the ORs presented in the study are adjusted for the effects of all other variables in the model, which allows for the measurement of the relationship between each variable and accident severity while accounting for the effects of all other variables. This approach helps isolate each variable’s effects and draw more precise conclusions about their impact on accident severity.
 
+The analysis found that the odds of a “fatal or serious” accident increase as the speed limit increases, with all different speed limits having an odds ratio greater than one. Only the 30 mph speed limit had a non-significant CI interval as it crossed one, meaning there is not enough evidence to suggest a significant difference between the odds of a severe accident on the 20mph roads compared to the 30 mph roads. The odds ratios for speed limit with motorcycle, pedestrian, and bicycle involvement are denoted by a “-” followed by the variable involved. These are also greater than one, indicating greater odds of a severe accident when these variables are involved. However, not all 95% confidence intervals exclude one, which means there is insufficient evidence to conclude a statistically significant difference between the odds of a severe accident in those specific combinations of the speed limit and variable interaction. Additionally, the broad confidence intervals observed in the results may be attributed to a limited number of occurrences in the data, particularly regarding pedestrians and cyclists involved in accidents on high-speed roads, such as 70 mph not adequately designed to accommodate them.
 
+<div align="center">
+    <img src="plot/f3.png" width="720px" alt="Figure 1">
+</div>
+<p align="center"> Figure 3: Forest plot of speed limit variables with their odds ratio results </p>
 
 
 
