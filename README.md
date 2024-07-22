@@ -13,7 +13,9 @@ This project was a team effort. Only provide dataset downloads but do not offer 
     - [1.1 Data Introduction](#1-1)
     - [1.2 Data Cleaning](#1-2)
 - [2. Exploratory Data Analysis](#2)
-- [Conclusion](#7)
+- [3. Variables Selection](#3)
+- [4. GLM](#4)
+- [5. Conclusions](#5)
 
 
 ## 1. Data
