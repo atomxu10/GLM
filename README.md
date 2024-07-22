@@ -10,11 +10,8 @@ This project was a team effort. Only provide dataset downloads but do not offer 
 - [1. Data](#1)
     - [1.1 Data Introduction](#1-1)
     - [1.2 Data Cleaning](#1-2)
-- [2. EDA](#2)
-- [Exploratory data analysis](#3)
-- [Method](#4)
-- [Convergence of the MICE algorithm](#5)
-- [Results](#6)
+- [2. Exploratory Data Analysis](#2)
+
 - [Conclusion](#7)
 ## 1. Data
 ### 1.1 Data Introduction
@@ -40,7 +37,7 @@ To illustrate, when a categorical variable describing the types of vehicles enga
 
 Once each dataset had been reduced to one row per accident, they were joined to the Accidents dataset by using the accident reference number to match the observations to the correct accident, resulting in a single data set containing all the information available from the three datasets. Finally, variables containing high levels of missing data, above 5%, were removed from further analysis as these often had other variables in the data set that reported similar information.
 
-## 2  Exploratory Data Analysis
+## 2. Exploratory Data Analysis
 A total of 91,199 road traffic accidents were recorded in 2020. Among them, 21.7% were defined as ‘Fatal or serious,’ and 78.3% were defined as ‘Slight.’ More accidents occurred in the summer (23,753), autumn (25,733), and winter (26,265), and relatively few in the spring (15,448). However, the proportion of fatal or serious accidents in spring was higher than in other seasons, at 23.3%. During the day, accidents were mainly concentrated in the afternoon (12-18) and the morning (6-12), with 43.8% and 26.0%, respectively, while the evening hours (0-6) had the highest risk of a severe accident at 26.0%. 68% of accidents occurred in urban areas (versus 32% in rural areas). The majority of accidents occurred at roundabouts (73.4%).
 Most accidents occurred on roads with a speed limit of 30mph (57.3%). The following highest percentage of accidents occurred on roads with speed limits of 60mph (12.5%) and 20mph (12.3%), followed by 40mph (8.6%), 70mph (5.1%), and 50mph (4.2%) (refer to Figure 1[left]). The severity of accidents also varied depending on the speed limit on the road. Roads with higher speed limits had a higher proportion of serious accidents, with those with a speed limit of 60mph having the highest percentage of severe accidents (32.7%). The severity of accidents decreased for roads with speed limits of 50mph (24.8%) and 70mph (24.6%), followed by 40mph (23%), 30mph (19.7%), and 20mph (15.7%) (refer to Figure 1[right]).
 
