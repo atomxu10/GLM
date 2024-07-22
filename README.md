@@ -4,6 +4,8 @@ Road traffic accidents (RTAs) are a significant and ongoing problem in the Unite
 
 It continues to cause severe injuries and incur high costs despite government efforts to avoid them. This analysis investigates the relationship between accident severity and speed limit using data from the UK’s Department for Transport on RTAs in 2020 while also considering other variables that may affect this relationship.
 
+This analysis aims to investigate the relationship between accident severity and the speed limit at the accident location, using the data collected by the UK’s Department for Transport (DfT) on RTAs during 2020. While the main objective is to understand the relationship between accident severity and speed limit, other variables present in the data may confound the relationship between these two and will have to be taken into consideration when investigating the relationship between accident severity and the speed limit.
+
 This project was a team effort. Only provide dataset downloads but do not offer code references. All data work was done in R. Special thanks to my team members:  Fernando Rodriguez Santamaria, Hanxi Ji, and Jiajin Jin.
 
 ## Content
@@ -12,6 +14,8 @@ This project was a team effort. Only provide dataset downloads but do not offer 
     - [1.2 Data Cleaning](#1-2)
 - [2. Exploratory Data Analysis](#2)
 - [Conclusion](#7)
+
+
 ## 1. Data
 ### 1.1 Data Introduction
 The data utilized in this analysis consists of [three different datasets](https://github.com/atomxu10/GLMProject/tree/main/data) published by the DfT, namely Accidents, Vehicles, and Casualties, each providing a detailed account of different aspects of road accidents. The datasets provide a comprehensive and detailed understanding of the factors contributing to road accidents, including the characteristics of vehicles, drivers, casualties, driving conditions, and road features.
