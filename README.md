@@ -70,7 +70,7 @@ The data presented in Figure 2 displays the proportion of fatal or serious accid
 
 <p align="center"> Figure 2: Proportion of fatal and serious accidents in different light situations by speed limits </p>
 
-## 3. GLM
+## 3. Generalized Linear Model
 ### 3.1 Variables Selection
 Following on from the EDA, variables that had been identified to have an impact on accident severity were considered for inclusion in statistical models. Several variables within and across each dataset measured similar information, so these variables were highly associated. Including variables with high levels of association can cause multicollinearity in statistical models, which may distort or confound the effects of variables on accident severity, resulting in unstable or unreliable estimates of the regression coefficients.
 
