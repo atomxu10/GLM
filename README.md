@@ -101,6 +101,7 @@ that model. Thus, model 3 and model 4 were preferred as it has the lowest AIC, B
 </div>
 <p align="center"> Table 3: Model comparison for variable selection </p>
 
+As can be seen in Table 4, the link which best fits the data is the probit link. However, based on AIC, BIC, and Pseudo-R squared, these differences must be considered more significant to warrant a more complex model. Therefore the final model selected is the one that uses the logit link as it facilitates the interpretation of results.
 
 <div align="center">
     <img src="plot/t4.png" width="720px" alt="Figure 1">
