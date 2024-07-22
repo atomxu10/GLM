@@ -74,25 +74,44 @@ Following on from the EDA, variables that had been identified to have an impact 
 
 In this analysis, Cramer’s V was used to identify which variables were most strongly related to each other. Cramer’s V Test is a type of statistical measure that is based on Pearson’s chi-squared statistic. Cramer’s V is specifically used to measure the strength of the relationship between two categorical variables. Cramer’s V results range from 0 to 1, with 0 indicating no association between the two variables and 1 indicating an opposite conclusion (Highly associated).
 
-In Table 2, A Cramer’s V value greater than or equal to 0.3 between two variables was considered sufficient to classify them as highly associated and to justify removing one from model inclusion.
+As shown in Table 2, A Cramer’s V value greater than or equal to 0.3 between two variables was considered sufficient to classify them as highly associated and to justify removing one from model inclusion.
 
 <div align="center">
     <img src="plot/t2.png" width="700px" alt="Figure 1">
 </div>
-
 <p align="center"> Table 2: Variables with high levels of association </p>
 
 ### 3.2 Model Method
 Logistic regression was used to model the accident severity and the impact of the speed limit on it while adjusting for the identified variables after removing highly associated categorical variables. Additional interaction terms were added to the model. The final regression model was selected by comparing models using Likelihood Ratio Tests (LRTs) and model fit statistics such as AIC, BIC, and Pseudo-R squared to determine the best-fitting model.
 
-- AIC
+- **Akaike Information Criterion (AIC)** is a statistical measure used to estimate the quality of a statistical model based on the Kullback-Leibler information. It can compare the fitting degree between the fitted and generated or actual models, which is helpful when selecting statistical models. AIC is equal to 2 times the difference between the number of parameters of the model and the maximized log-likelihood. The model with a lower AIC value will be chosen, and the chosen model will include more information than other models. AIC can help to avoid the risk of overfitting and underfitting
 
-Akaike Information Criterion (AIC) is a statistical measure used to estimate the quality of a statistical model based on the Kullback-Leibler information. It can compare the fitting degree between the fitted and generated or actual models, which is helpful when selecting statistical models. AIC is equal to 2 times the difference between the number of parameters of the model and the maximized log-likelihood. The model with a lower AIC value will be chosen, and the chosen model will include more information than other models. AIC can help to avoid the risk of overfitting and underfitting
+- **Bayesian Information Criterion (BIC)** is a statistical method of model selection based on Bayesian inference. BIC can compare the goodness of fit of a model and is helpful when weighing the complexity and fitting goodness of models. When choosing the optimal model, the model with a lower BIC value will be applied, showing that it fits better with the data. BIC computes a heavier penalty on models’ complexity than AIC, making it suitable for models with small sample sizes.
 
-- BIC
-  
-Bayesian Information Criterion (BIC) is a statistical method of model selection based on Bayesian inference. BIC can compare the goodness of fit of a model and is helpful when weighing the complexity and fitting goodness of models. When choosing the optimal model, the model with a lower BIC value will be applied, showing that it fits better with the data. BIC computes a heavier penalty on models’ complexity than AIC, making it suitable for models with small sample sizes.
+- **Pseudo R-squared** is a statistical metric that evaluates the fitness of a regression model by contrasting it with a null model that contains only the intercept. The computation involves taking the ratio of the reduction in the residual sum of squares of the full model compared to the null model. There are several types of pseudo R-squared, each with its unique equation and meaning. Although pseudo R-squared does not have a direct interpretation of the percentage of variability clarified in the dependent variable, it provides a comparative measure of the model’s enhancement over the null model. The interpretation of pseudo R-squared is similar to that of the conventional R-squared, with greater values indicating a better fit of the model.
+
+- **The likelihood ratio test (Wilks test)** is a classical statistical hypothesis test used to select the best-fitting model from two nested models, where one is more complex than the other. The test determines if the simpler model is adequate by calculating the ratio of likelihoods of the two models. The test statistic is measured by two times the difference between the log-likelihoods of the two models, which follows a chi-square distribution with p degrees of freedom (p being the difference in the number of parameters in the two models). When the test statistic exceeds the critical value, the more intricate model is preferred. In contrast, if the test statistic is lower than the critical value, the simpler model is favored. The likelihood ratio test helps to determine if the simple model is inadequate when fitting the data.
 
 ### 3.3 Model Selection
+As shown below in Table 3, LRTs comparing the more complex model to its simpler version always came out with a p-value <0.001, meaning that the more complex model fits the data better. Nonetheless, the likelihood ratio test (LRT) between model 2 and its simpler version, model 3, which excludes highly correlated variables, produced a statistically significant p-value, suggesting that model 2 is superior. However, this needs to account for the potential multicollinearity problems Model 2 has due to the high associated variables in
+that model. Thus, model 3 and model 4 were preferred as it has the lowest AIC, BIC, and highest pseudo-R squared.
+
+<div align="center">
+    <img src="plot/t3.png" width="700px" alt="Figure 1">
+</div>
+<p align="center"> Table 3: Model comparison for variable selection </p>
+
+
+
+
+
 
 ### 3.4 Model Result
+
+
+
+
+
+
+
+
