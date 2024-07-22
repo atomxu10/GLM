@@ -102,7 +102,10 @@ that model. Thus, model 3 and model 4 were preferred as it has the lowest AIC, B
 <p align="center"> Table 3: Model comparison for variable selection </p>
 
 
-
+<div align="center">
+    <img src="plot/t4.png" width="720px" alt="Figure 1">
+</div>
+<p align="center"> Table 4: Model comparison for link selection </p>
 
 
 
