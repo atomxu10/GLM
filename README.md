@@ -116,7 +116,7 @@ The results are conveyed using odds ratios (ORs), which provide a measure of the
 The analysis found that the odds of a “fatal or serious” accident increase as the speed limit increases, with all different speed limits having an odds ratio greater than one. Only the 30 mph speed limit had a non-significant CI interval as it crossed one, meaning there is not enough evidence to suggest a significant difference between the odds of a severe accident on the 20mph roads compared to the 30 mph roads. The odds ratios for speed limit with motorcycle, pedestrian, and bicycle involvement are denoted by a “-” followed by the variable involved. These are also greater than one, indicating greater odds of a severe accident when these variables are involved. However, not all 95% confidence intervals exclude one, which means there is insufficient evidence to conclude a statistically significant difference between the odds of a severe accident in those specific combinations of the speed limit and variable interaction. Additionally, the broad confidence intervals observed in the results may be attributed to a limited number of occurrences in the data, particularly regarding pedestrians and cyclists involved in accidents on high-speed roads, such as 70 mph not adequately designed to accommodate them.
 
 <div align="center">
-    <img src="plot/f3.png" width="680px" alt="Figure 1">
+    <img src="plot/f3.png" width="650px" alt="Figure 1">
 </div>
 <p align="center"> Figure 3: Forest plot of speed limit variables with their odds ratio results </p>
 
