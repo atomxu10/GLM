@@ -76,7 +76,7 @@ In this analysis, Cramer’s V was used to identify which variables were most st
 In Table 2, A Cramer’s V value greater than or equal to 0.3 between two variables was considered sufficient to classify them as highly associated and to justify removing one from model inclusion.
 
 <div align="center">
-    <img src="plot/t2.png" width="800px" alt="Figure 1">
+    <img src="plot/t2.png" width="700px" alt="Figure 1">
 </div>
 
 <p align="center"> Table 2: Variables with high levels of association </p>
