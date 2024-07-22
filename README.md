@@ -82,3 +82,15 @@ In Table 2, A Cramer’s V value greater than or equal to 0.3 between two variab
 
 <p align="center"> Table 2: Variables with high levels of association </p>
 
+### 3.2 Model Method
+Logistic regression was used to model the accident severity and the impact of the speed limit on it while adjusting for the identified variables after removing highly associated categorical variables. Additional interaction terms were added to the model. The final regression model was selected by comparing models using Likelihood Ratio Tests (LRTs) and model fit statistics such as AIC, BIC, and Pseudo-R squared to determine the best-fitting model.
+
+- AIC
+Akaike Information Criterion (AIC) is a statistical measure used to estimate the quality of a statistical model based on the Kullback-Leibler information. It can compare the fitting degree between the fitted and generated or actual models, which is helpful when selecting statistical models. AIC is equal to 2 times the difference between the number of parameters of the model and the maximized log-likelihood. The model with a lower AIC value will be chosen, and the chosen model will include more information than other models. AIC can help to avoid the risk of overfitting and underfitting
+
+- BIC
+Bayesian Information Criterion (BIC) is a statistical method of model selection based on Bayesian inference. BIC can compare the goodness of fit of a model and is helpful when weighing the complexity and fitting goodness of models. When choosing the optimal model, the model with a lower BIC value will be applied, showing that it fits better with the data. BIC computes a heavier penalty on models’ complexity than AIC, making it suitable for models with small sample sizes.
+
+### 3.3 Model Selection
+
+### 3.4 Model Result
