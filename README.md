@@ -10,7 +10,7 @@ This project was a team effort. Only provide dataset downloads but do not offer 
 - [1. Data](#1)
     - [1.1 Data Introduction](#1-1)
     - [1.2 Data Cleaning](#1-2)
-- [EDA](#2)
+- [2. EDA](#2)
 - [Exploratory data analysis](#3)
 - [Method](#4)
 - [Convergence of the MICE algorithm](#5)
@@ -44,7 +44,11 @@ Once each dataset had been reduced to one row per accident, they were joined to 
 A total of 91,199 road traffic accidents were recorded in 2020. Among them, 21.7% were defined as ‘Fatal or serious,’ and 78.3% were defined as ‘Slight.’ More accidents occurred in the summer (23,753), autumn (25,733), and winter (26,265), and relatively few in the spring (15,448). However, the proportion of fatal or serious accidents in spring was higher than in other seasons, at 23.3%. During the day, accidents were mainly concentrated in the afternoon (12-18) and the morning (6-12), with 43.8% and 26.0%, respectively, while the evening hours (0-6) had the highest risk of a severe accident at 26.0%. 68% of accidents occurred in urban areas (versus 32% in rural areas). The majority of accidents occurred at roundabouts (73.4%).
 Most accidents occurred on roads with a speed limit of 30mph (57.3%). The following highest percentage of accidents occurred on roads with speed limits of 60mph (12.5%) and 20mph (12.3%), followed by 40mph (8.6%), 70mph (5.1%), and 50mph (4.2%) (refer to Figure 1[left]). The severity of accidents also varied depending on the speed limit on the road. Roads with higher speed limits had a higher proportion of serious accidents, with those with a speed limit of 60mph having the highest percentage of severe accidents (32.7%). The severity of accidents decreased for roads with speed limits of 50mph (24.8%) and 70mph (24.6%), followed by 40mph (23%), 30mph (19.7%), and 20mph (15.7%) (refer to Figure 1[right]).
 
+<div align="center">
+    <img src="plot/f1.png" width="800px" alt="Figure 1">
+</div>
 
+<p align="center">Figure 1: The number of accidents per speed limit - the number of accidents occurred on roads with different mph speed limits. (Left) the proportion of accidents categorized as ‘Fatal or serious’ according to the different speed limits. </p>
 
 
 
