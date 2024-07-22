@@ -73,7 +73,11 @@ Following on from the EDA, variables that had been identified to have an impact 
 
 In this analysis, Cramer’s V was used to identify which variables were most strongly related to each other. Cramer’s V Test is a type of statistical measure that is based on Pearson’s chi-squared statistic. Cramer’s V is specifically used to measure the strength of the relationship between two categorical variables. Cramer’s V results range from 0 to 1, with 0 indicating no association between the two variables and 1 indicating an opposite conclusion (Highly associated).
 
-In table 2, A Cramer’s V value greater than or equal to 0.3 between two variables was considered sufficient to classify them as highly associated and to justify removing one from model inclusion.
+In Table 2, A Cramer’s V value greater than or equal to 0.3 between two variables was considered sufficient to classify them as highly associated and to justify removing one from model inclusion.
 
+<div align="center">
+    <img src="plot/t2.png" width="850px" alt="Figure 1">
+</div>
 
+<p align="center"> Table 2: Variables with high levels of association </p>
 
