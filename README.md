@@ -9,7 +9,8 @@ This project was a team effort. Only provide dataset downloads but do not offer 
 ## Content
 - [1. Data](#1)
     - [1.1 Data Introduction](#1-1)
-- [Model (Multiple Linear Regression)](#2)
+    - [1.2 Data Cleaning](#1-2)
+- [EDA](#2)
 - [Exploratory data analysis](#3)
 - [Method](#4)
 - [Convergence of the MICE algorithm](#5)
