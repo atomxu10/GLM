@@ -63,7 +63,7 @@ Table 1 shows the severity of accidents corresponding to lighting conditions, wi
 The data presented in Figure 2 displays the proportion of fatal or serious accidents on roads with different speed limits under varying light conditions, namely daylight and darkness. The findings reveal that, for vehicles travelling at the same speed limit, the severity of accidents is generally higher in darkness than in daylight. At a speed limit of 40mph, the disparity in accident severity between the two light conditions is most pronounced, with a difference of 28% in darkness (versus 22% in daylight). As the speed limit increases, the proportion of fatal or serious accidents occurring in darkness compared to daylight conditions becomes more significant.
 
 <div align="center">
-    <img src="plot/f2.png" width="900px" alt="Figure 1">
+    <img src="plot/f2.png" width="850px" alt="Figure 1">
 </div>
 
 <p align="center"> Figure 2: Proportion of fatal and serious accidents in different light situations by speed limits </p>
