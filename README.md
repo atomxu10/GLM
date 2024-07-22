@@ -101,7 +101,7 @@ that model. Thus, model 3 and model 4 were preferred as it has the lowest AIC, B
 </div>
 <p align="center"> Table 3: Model comparison for variable selection </p>
 
-As can be seen in Table 4, the link which best fits the data is the probit link. However, based on AIC, BIC, and Pseudo-R squared, these differences must be considered more significant to warrant a more complex model. Therefore the final model selected is the one that uses the logit link as it facilitates the interpretation of results.
+As can be seen in Table 4, the link which best fits the data is the probit link. However, the logit link was still chosen as the final model, given its advantages of interpretability over the probit link model. The logit link has a more straightforward interpretation compared to the probit link. The logit link measures the log odds of the response variable being in one category versus the other. In contrast, the probit link measures a standard normal distribution function’s inverse cumulative distribution function. The logit link is better suited for this task as it allows for a more straightforward interpretation of odds ratios and the probability of success or failure, which is particularly relevant in understanding the relationship between accident severity and speed limit.
 
 <div align="center">
     <img src="plot/t4.png" width="720px" alt="Figure 1">
