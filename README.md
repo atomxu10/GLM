@@ -44,7 +44,12 @@ Most accidents occurred on roads with a speed limit of 30mph (57.3%). The follow
     <img src="plot/f1.png" width="900px" alt="Figure 1">
 </div>
 
-<p align="center">Figure 1: The number of accidents per speed limit - the number of accidents occurred on roads with different mph speed limits. (Left) the proportion of accidents categorized as ‘Fatal or serious’ according to the different speed limits. </p>
+<p align="center">Figure 1: The number of accidents per speed limit - the number of accidents occurred on roads with different mph speed limits. (Left) the proportion of accidents categorized as ‘Fatal or serious’ according to the different speed limits </p>
 
+Table 1 shows the severity of accidents corresponding to lighting conditions, with 71% of all accidents occurring in daylight conditions, 21% of which were serious. Accidents in darkness with lights lit accounted for 21% of the overall accidents, of which 22% were fatal or serious. The overall percentage of accidents in darkness with no lights lit made up only 1% of the total accidents in the data. However, 25% of these accidents were considered fatal or serious. The percentage of accidents that occurred in darkness with no lighting was 5%, of which 33% were classified as fatal or serious. Finally, the percentage of accidents that occurred in darkness, where lighting conditions were unknown, made up 2% of the total accidents, of which 14% were considered fatal or serious. The data suggest that light conditions may contribute to the severity of accidents.
 
+<div align="center">
+    <img src="plot/t1.png" width="900px" alt="Figure 1">
+</div>
 
+<p align="center"> Table 1: Distribution of light conditions involved </p>
