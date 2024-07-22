@@ -47,7 +47,7 @@ A total of 91,199 road traffic accidents were recorded in 2020. Among them, 21.7
 Most accidents occurred on roads with a speed limit of 30mph (57.3%). The following highest percentage of accidents occurred on roads with speed limits of 60mph (12.5%) and 20mph (12.3%), followed by 40mph (8.6%), 70mph (5.1%), and 50mph (4.2%) (refer to Figure 1[left]). The severity of accidents also varied depending on the speed limit on the road. Roads with higher speed limits had a higher proportion of serious accidents, with those with a speed limit of 60mph having the highest percentage of severe accidents (32.7%). The severity of accidents decreased for roads with speed limits of 50mph (24.8%) and 70mph (24.6%), followed by 40mph (23%), 30mph (19.7%), and 20mph (15.7%) (refer to Figure 1[right]).
 
 <div align="center">
-    <img src="plot/f1.png" width="900px" alt="Figure 1">
+    <img src="plot/f1.png" width="870px" alt="Figure 1">
 </div>
 
 <p align="center">Figure 1: The number of accidents per speed limit - the number of accidents occurred on roads with different mph speed limits. (Left) the proportion of accidents categorized as ‘Fatal or serious’ according to the different speed limits </p>
