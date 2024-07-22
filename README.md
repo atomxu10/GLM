@@ -13,9 +13,11 @@ This project was a team effort. Only provide dataset downloads but do not offer 
     - [1.1 Data Introduction](#1-1)
     - [1.2 Data Cleaning](#1-2)
 - [2. Exploratory Data Analysis](#2)
-- [3. Variables Selection](#3)
-- [4. GLM](#4)
-- [5. Conclusions](#5)
+- [3. GLM](#3)
+    - [3.1 Variables Selection](#3-1)
+    - [3.2 Modelling Methods](#3-2)
+    - [3.3 Modelling Results](#3-3)
+- [4. Conclusions](#4)
 
 
 ## 1. Data
@@ -81,7 +83,7 @@ As shown in Table 2, A Cramer’s V value greater than or equal to 0.3 between t
 </div>
 <p align="center"> Table 2: Variables with high levels of association </p>
 
-### 3.2 Model Method
+### 3.2 Modelling Methods
 Logistic regression was used to model the accident severity and the impact of the speed limit on it while adjusting for the identified variables after removing highly associated categorical variables. Additional interaction terms were added to the model. The final regression model was selected by comparing models using Likelihood Ratio Tests (LRTs) and model fit statistics such as AIC, BIC, and Pseudo-R squared to determine the best-fitting model.
 
 - **Akaike Information Criterion (AIC)** is a statistical measure used to estimate the quality of a statistical model based on the Kullback-Leibler information. It can compare the fitting degree between the fitted and generated or actual models, which is helpful when selecting statistical models. AIC is equal to 2 times the difference between the number of parameters of the model and the maximized log-likelihood. The model with a lower AIC value will be chosen, and the chosen model will include more information than other models. AIC can help to avoid the risk of overfitting and underfitting
@@ -108,7 +110,7 @@ As can be seen in Table 4, the link which best fits the data is the probit link.
 </div>
 <p align="center"> Table 4: Model comparison for link selection </p>
 
-### 3.4 Model Result
+### 3.4 Modelling Results
 The final statistical model is a logistic regression model that adjusts for 19 variables inclusive of three interaction terms between the speed limit and motorcycle, bicycle, and pedestrian involvement. This model uses a logit link to facilitate the interpretation of the results.
 
 The results are conveyed using odds ratios (ORs), which provide a measure of the likelihood of an accident being classified as “fatal or serious” compared to “slight” for different levels of a particular variable in the context of accident severity. For categorical variables, the odds ratio compares the odds of experiencing a “fatal or serious” accident in one category (such as high-speed limit) with the odds of having a “fatal or serious” accident in a reference category (such as a 20mph speed limit). For numerical variables, the OR indicates the change in the odds of having a “fatal or serious” accident associated with a one-unit increase in the variable. It is essential to note that the ORs presented in the study are adjusted for the effects of all other variables in the model, which allows for the measurement of the relationship between each variable and accident severity while accounting for the effects of all other variables. This approach helps isolate each variable’s effects and draw more precise conclusions about their impact on accident severity.
@@ -120,7 +122,12 @@ The analysis found that the odds of a “fatal or serious” accident increase a
 </div>
 <p align="center"> Figure 3: Forest plot of speed limit variables with their odds ratio results </p>
 
+## 4. Conclusions
+This analysis found that after adjusting confounding variables, the higher the speed limit, the greater the odds of an accident being “fatal or serious.” Interactions of speed limit with other variable involvement, such as motorcycles, bicycles, and pedestrians, showed even greater odds in most instances of a fatal or serious accident when in comparison to when those variables are not involved in a 20 mph road. While it is clear that speed limit contributes to the severity of accidents in the UK, other variables also affect the severity of these accidents. In particular, the analysis found that adverse light conditions and dangerous manoeuvers like skidding or overturning also significantly raise the odds of a severe accident.
 
+In practice, given that higher speed limits increase the odds of “fatal or serious” accidents, it may be interesting to consider lowering the speed limits of roads with the highest speed limit. For example, reducing the 60 and 70-mph road speed limits by five mph may reduce the number of fatal or serious accidents in the UK.
+
+Nevertheless, it is crucial to acknowledge the limitations of this analysis when interpreting the results. Firstly, the generalizability of the findings may be questioned. While the data collected on Road Traffic Accidents (RTAs) in the UK is a reasonably accurate representation, some incidents on private property, such as car parks, may not be reported. Additionally, not all drivers or casualties may report their injuries. However, these factors would likely affect the number of reported fatal or severe accidents, as only minor incidents or injuries are more prone to being unreported. Secondly, it is essential to note that the model does not consider driver-related variables such as speeding, accelerating, breaking, not signalling, and other related factors. Driver “fault” is most likely involved in each accident. Access to this data is essential for the model to provide a genuine and precise representation of the effect of speed limits on the accident severity of RTAs in the UK.
 
 
 
