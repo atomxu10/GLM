@@ -97,7 +97,7 @@ As shown below in Table 3, LRTs comparing the more complex model to its simpler 
 that model. Thus, model 3 and model 4 were preferred as it has the lowest AIC, BIC, and highest pseudo-R squared.
 
 <div align="center">
-    <img src="plot/t3.png" width="700px" alt="Figure 1">
+    <img src="plot/t3.png" width="720px" alt="Figure 1">
 </div>
 <p align="center"> Table 3: Model comparison for variable selection </p>
 
