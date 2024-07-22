@@ -4,7 +4,7 @@ Road traffic accidents (RTAs) are a significant and ongoing problem in the Unite
 
 It continues to cause severe injuries and incur high costs despite government efforts to avoid them. This analysis investigates the relationship between accident severity and speed limit using data from the UK’s Department for Transport on RTAs in 2020 while also considering other variables that may affect this relationship.
 
-This analysis aims to investigate the relationship between accident severity and the speed limit at the accident location, using the data collected by the UK’s Department for Transport (DfT) on RTAs during 2020. While the main objective is to understand the relationship between accident severity and speed limit, other variables present in the data may confound the relationship between these two and will have to be taken into consideration when investigating the relationship between accident severity and the speed limit.
+It aims to investigate the relationship between accident severity and the speed limit at the accident location, using the data collected by the UK’s Department for Transport (DfT) on RTAs during 2020. While the main objective is to understand the relationship between accident severity and speed limit, other variables present in the data may confound the relationship between these two and will have to be taken into consideration when investigating the relationship between accident severity and the speed limit.
 
 This project was a team effort. Only provide dataset downloads but do not offer code references. All data work was done in R. Special thanks to my team members:  Fernando Rodriguez Santamaria, Hanxi Ji, and Jiajin Jin.
 
@@ -57,3 +57,12 @@ Table 1 shows the severity of accidents corresponding to lighting conditions, wi
 </div>
 
 <p align="center"> Table 1: Distribution of light conditions involved </p>
+
+The data presented in Figure 2 displays the proportion of fatal or serious accidents on roads with different speed limits under varying light conditions, namely daylight and darkness. The findings reveal that, for vehicles travelling at the same speed limit, the severity of accidents is generally higher in darkness than in daylight. At a speed limit of 40mph, the disparity in accident severity between the two light conditions is most pronounced, with a difference of 28% in darkness (versus 22% in daylight). As the speed limit increases, the proportion of fatal or serious accidents occurring in darkness compared to daylight conditions becomes more significant.
+
+<div align="center">
+    <img src="plot/f2.png" width="900px" alt="Figure 1">
+</div>
+
+<p align="center"> Figure 2: Proportion of fatal and serious accidents in different light situations by speed limits </p>
+
