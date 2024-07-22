@@ -6,7 +6,9 @@ It continues to cause severe injuries and incur high costs despite government ef
 
 It aims to investigate the relationship between accident severity and the speed limit at the accident location, using the data collected by the UK’s Department for Transport (DfT) on RTAs during 2020. While the main objective is to understand the relationship between accident severity and speed limit, other variables present in the data may confound the relationship between these two and will have to be taken into consideration when investigating the relationship between accident severity and the speed limit.
 
-This project was a team effort. Only provide dataset downloads but do not offer code references. All data work was done in R. Special thanks to my team members:  Fernando Rodriguez Santamaria, Hanxi Ji, and Jiajin Jin.
+This project was a team effort. Only provide dataset downloads but do not offer code references. All data worked in R. 
+
+Special thanks to my team members:  Fernando Rodriguez Santamaria, Hanxi Ji, and Jiajin Jin.
 
 ## Content
 - [1. Data](#1)
