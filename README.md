@@ -19,8 +19,10 @@ This project was a team effort. Only provide dataset downloads but do not offer 
     - [3.3 Modelling Results](#3-3)
 - [4. Conclusions](#4)
 
-
+<a name="1"></a>
 ## 1. Data
+
+<a name="1-1"></a>
 ### 1.1 Data Introduction
 The data utilized in this analysis consists of [three different datasets](https://github.com/atomxu10/GLMProject/tree/main/data) published by the DfT, namely Accidents, Vehicles, and Casualties, each providing a detailed account of different aspects of road accidents. The datasets provide a comprehensive and detailed understanding of the factors contributing to road accidents, including the characteristics of vehicles, drivers, casualties, driving conditions, and road features.
 
@@ -30,6 +32,7 @@ The Vehicles dataset covers 27 variables that provide a detailed account of the 
 
 The Casualties dataset includes 18 variables that convey information on the casualties involved in each accident. It contains details on the age and sex of each casualty, whether they were a pedestrian or in a vehicle. Their movement and location during the accident are also included if they were pedestrians. The dataset has multiple rows of data per accident reference number, each representing a different casualty involved in the accident.
 
+<a name="1-2"></a>
 ### 1.2 Data Cleaning
 For this analysis, the accident severity in the Accidents dataset was recorded as “fatal or serious” and “slight,” which differs from the original data, which recorded each severity separately as “fatal,” “serious,” and “slight.” Initial data cleaning consisted of converting -1 values into NAs as these values were known to be missing, given the information available from the data dictionary included with the three datasets of interest. Most of the data variables consisted of categorical values, indicating that they were composed of distinct groups. For example, the accident severity variable is a categorical variable in which each accident is either considered “fatal or serious” or “slight.” Many numerical variables detailed the number of vehicles and casualties involved in each accident, the ages of drivers, casualties, and vehicles in addition to their engine capacity.
 
@@ -44,6 +47,7 @@ To illustrate, when a categorical variable describing the types of vehicles enga
 
 Once each dataset had been reduced to one row per accident, they were joined to the Accidents dataset by using the accident reference number to match the observations to the correct accident, resulting in a single data set containing all the information available from the three datasets. Finally, variables containing high levels of missing data, above 5%, were removed from further analysis as these often had other variables in the data set that reported similar information.
 
+<a name="2"></a>
 ## 2. Exploratory Data Analysis
 A total of 91,199 road traffic accidents were recorded in 2020. Among them, 21.7% were defined as ‘Fatal or serious,’ and 78.3% were defined as ‘Slight.’ More accidents occurred in the summer (23,753), autumn (25,733), and winter (26,265), and relatively few in the spring (15,448). However, the proportion of fatal or serious accidents in spring was higher than in other seasons, at 23.3%. During the day, accidents were mainly concentrated in the afternoon (12-18) and the morning (6-12), with 43.8% and 26.0%, respectively, while the evening hours (0-6) had the highest risk of a severe accident at 26.0%. 68% of accidents occurred in urban areas (versus 32% in rural areas). The majority of accidents occurred at roundabouts (73.4%).
 Most accidents occurred on roads with a speed limit of 30mph (57.3%). The following highest percentage of accidents occurred on roads with speed limits of 60mph (12.5%) and 20mph (12.3%), followed by 40mph (8.6%), 70mph (5.1%), and 50mph (4.2%) (refer to Figure 1[left]). The severity of accidents also varied depending on the speed limit on the road. Roads with higher speed limits had a higher proportion of serious accidents, with those with a speed limit of 60mph having the highest percentage of severe accidents (32.7%). The severity of accidents decreased for roads with speed limits of 50mph (24.8%) and 70mph (24.6%), followed by 40mph (23%), 30mph (19.7%), and 20mph (15.7%) (refer to Figure 1[right]).
@@ -70,7 +74,10 @@ The data presented in Figure 2 displays the proportion of fatal or serious accid
 
 <p align="center"> Figure 2: Proportion of fatal and serious accidents in different light situations by speed limits </p>
 
+<a name="3"></a>
 ## 3. Generalized Linear Model
+
+<a name="3-1"></a>
 ### 3.1 Variables Selection
 Following on from the EDA, variables that had been identified to have an impact on accident severity were considered for inclusion in statistical models. Several variables within and across each dataset measured similar information, so these variables were highly associated. Including variables with high levels of association can cause multicollinearity in statistical models, which may distort or confound the effects of variables on accident severity, resulting in unstable or unreliable estimates of the regression coefficients.
 
@@ -83,6 +90,7 @@ As shown in Table 2, A Cramer’s V value greater than or equal to 0.3 between t
 </div>
 <p align="center"> Table 2: Variables with high levels of association </p>
 
+<a name="3-2"></a>
 ### 3.2 Modelling Methods
 Logistic regression was used to model the accident severity and the impact of the speed limit on it while adjusting for the identified variables after removing highly associated categorical variables. Additional interaction terms were added to the model. The final regression model was selected by comparing models using Likelihood Ratio Tests (LRTs) and model fit statistics such as AIC, BIC, and Pseudo-R squared to determine the best-fitting model.
 
@@ -94,6 +102,7 @@ Logistic regression was used to model the accident severity and the impact of th
 
 - **The likelihood ratio test (Wilks test)** is a classical statistical hypothesis test used to select the best-fitting model from two nested models, where one is more complex than the other. The test determines if the simpler model is adequate by calculating the ratio of likelihoods of the two models. The test statistic is measured by two times the difference between the log-likelihoods of the two models, which follows a chi-square distribution with p degrees of freedom (p being the difference in the number of parameters in the two models). When the test statistic exceeds the critical value, the more intricate model is preferred. In contrast, if the test statistic is lower than the critical value, the simpler model is favored. The likelihood ratio test helps to determine if the simple model is inadequate when fitting the data.
 
+<a name="3-3"></a>
 ### 3.3 Model Selection
 As shown below in Table 3, LRTs comparing the more complex model to its simpler version always came out with a p-value <0.001, meaning that the more complex model fits the data better. Nonetheless, the likelihood ratio test (LRT) between model 2 and its simpler version, model 3, which excludes highly correlated variables, produced a statistically significant p-value, suggesting that model 2 is superior. However, this needs to account for the potential multicollinearity problems Model 2 has due to the high associated variables in
 that model. Thus, model 3 and model 4 were preferred as it has the lowest AIC, BIC, and highest pseudo-R squared.
@@ -110,6 +119,7 @@ As can be seen in Table 4, the link which best fits the data is the probit link.
 </div>
 <p align="center"> Table 4: Model comparison for link selection </p>
 
+<a name="3-4"></a>
 ### 3.4 Modelling Results
 The final statistical model is a logistic regression model that adjusts for 19 variables inclusive of three interaction terms between the speed limit and motorcycle, bicycle, and pedestrian involvement. This model uses a logit link to facilitate the interpretation of the results.
 
@@ -122,6 +132,7 @@ The analysis found that the odds of a “fatal or serious” accident increase a
 </div>
 <p align="center"> Figure 3: Forest plot of speed limit variables with their odds ratio results </p>
 
+<a name="4"></a>
 ## 4. Conclusions
 This analysis found that after adjusting confounding variables, the higher the speed limit, the greater the odds of an accident being “fatal or serious.” Interactions of speed limit with other variable involvement, such as motorcycles, bicycles, and pedestrians, showed even greater odds in most instances of a fatal or serious accident when in comparison to when those variables are not involved in a 20 mph road. While it is clear that speed limit contributes to the severity of accidents in the UK, other variables also affect the severity of these accidents. In particular, the analysis found that adverse light conditions and dangerous manoeuvers like skidding or overturning also significantly raise the odds of a severe accident.
 
